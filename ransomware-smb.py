@@ -1,9 +1,9 @@
-#!/opt/python/bin/python3.6
+#!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 import requests
 import json
-import sys, pprint
-import datetime, time, dateutil.parser
+import sys
+import datetime, dateutil.parser
 
 try:
     req = requests.get('https://fsrm.experiant.ca/api/v1/combined')
