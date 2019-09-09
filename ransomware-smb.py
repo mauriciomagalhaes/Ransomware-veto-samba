@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 import requests
 import json
-import sys
+import sys, os
 import datetime, dateutil.parser
 
 dirsamba='/home/mauricio'
@@ -26,4 +26,6 @@ print("veto files = ", end="")
 for x in rans:
     print('/'+x, end="")
 
-sys.stdout.close()                                           
+sys.stdout.close()
+# Reload Samba
+os.system("smbcontrol smbd reload-config")
