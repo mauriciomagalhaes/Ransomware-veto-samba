@@ -5,6 +5,7 @@ import json
 import sys, os
 import datetime, dateutil.parser
 
+# Mesmo diretório do smb.conf
 dirsamba='/home/mauricio'
 
 try:
