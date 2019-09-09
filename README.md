@@ -9,7 +9,7 @@ python >= 3.5
 
 ## Linux:
 
-        git clone https://github.com/mauriciomagalhaes/ransomware-samba.git
+        git clone https://github.com/mauriciomagalhaes/Ransomware-veto-samba.git
 
         pip install python-dateutil
 
