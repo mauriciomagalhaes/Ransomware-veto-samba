@@ -1,19 +1,19 @@
 # Ransomware-veto-samba
 > Cria um arquivo com o parametro "veto files = " todos os arquivos conhecidos de ransomware, fazendo com que esses arquivos não sejam gravados.
 
-## Desenvolvido
+# Desenvolvido
 
 python >= 3.5
 
-## Instalação
+# Instalação
 
-# Linux:
+## Linux:
 
 git clone https://github.com/mauriciomagalhaes/ransomware-samba.git
 
 pip install python-dateutil
 
-# Samba:
+## Samba:
 
 Crie um include no [Global]
 
@@ -25,7 +25,7 @@ Crie um include no [Global]
         max protocol = SMB3
 
 
-## Historico de Desenvolvimento
+# Historico de Desenvolvimento
 
 * 0.1
     * Primeira Versão
