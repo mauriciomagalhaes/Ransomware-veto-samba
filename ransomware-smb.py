@@ -5,6 +5,8 @@ import json
 import sys
 import datetime, dateutil.parser
 
+dirsamba='/home/mauricio'
+
 try:
     req = requests.get('https://fsrm.experiant.ca/api/v1/combined')
 except:
@@ -18,7 +20,7 @@ lastupdate = dateutil.parser.parse(lastupdate).strftime('%d/%m/%Y - %H:%m')
 print('Número de Ransomwares: '+str(registros)+'\nUltimo update: '+str(lastupdate))
 
 rans = (dic['filters'])
-sys.stdout=open("ransomwares.conf","w")
+sys.stdout=open(dirsamba+"/ransomwares.conf","w")
 print("veto files = ", end="")
 
 for x in rans:
