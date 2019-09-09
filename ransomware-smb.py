@@ -29,3 +29,4 @@ for x in rans:
 sys.stdout.close()
 # Reload Samba
 os.system("smbcontrol smbd reload-config")
+#os.system("smbcontrol nmbd reload-config")
