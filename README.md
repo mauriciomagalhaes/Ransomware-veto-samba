@@ -1,6 +1,10 @@
 # Ransomware-veto-samba
 > Cria um arquivo com o parametro "veto files = " todos os arquivos conhecidos de ransomware, fazendo com que esses arquivos não sejam gravados.
 
+## Desenvolvido
+
+python >= 3.5
+
 ## Installation
 
 #Linux:
