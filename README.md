@@ -25,7 +25,7 @@ Crie um include no [Global]
         max protocol = SMB3
 
 
-## Release History
+## Historico de Desenvolvimento
 
 * 0.1
     * Primeira Versão
