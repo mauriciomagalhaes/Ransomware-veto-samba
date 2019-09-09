@@ -9,9 +9,30 @@ python >= 3.5
 
 ## Linux:
 
-git clone https://github.com/mauriciomagalhaes/ransomware-samba.git
+        git clone https://github.com/mauriciomagalhaes/ransomware-samba.git
 
-pip install python-dateutil
+        pip install python-dateutil
+
+1 - Adicionar crontab:
+
+Ex: Atualização a cada 6 hora
+
+        * */6 * * * <PATH>/ransomware-smb.py
+
+2 - Escolha da variavel "dirsamba"
+
+Ex: 
+
+        dirsamba='/etc/samba'
+
+3 - Descomentar comando Reload do Samba.
+
+## Reload Samba
+Descomente as útimas linhas abaixo:
+
+        os.system("smbcontrol smbd reload-config")
+        os.system("smbcontrol nmbd reload-config")
+
 
 ## Samba:
 
