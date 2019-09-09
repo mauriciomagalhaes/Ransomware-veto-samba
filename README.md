@@ -5,15 +5,15 @@
 
 python >= 3.5
 
-## Installation
+## Instalação
 
-#Linux:
+# Linux:
 
 git clone https://github.com/mauriciomagalhaes/ransomware-samba.git
 
 pip install python-dateutil
 
-#Samba:
+# Samba:
 
 Crie um include no [Global]
 
