@@ -1,41 +1,18 @@
-# Ransomware-Veto-Samba
+# Ransomware-veto-samba
+> Cria um arquivo com o parametro "veto files = " todos os arquivos conhecidos de ransomware, fazendo com que esses arquivos não sejam gravados.
 
-Função: 
-Cria um arquivo com o parametro "veto files = " todos os arquivos conhecidos de ransomware, fazendo com que esses arquivos não sejam gravados.
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
 
-Desenvolvido na versão
-python >= 3.5
+## Installation
 
-Crie um include no [Global]
-Ex: smb.conf
+Linux:
 
-[global]
-        ...
-        
-        include = /etc/samba/ransomwares.conf
+git clone https://github.com/mauriciomagalhaes/ransomware-samba.git
 
-        client min protocol = SMB2
-        client max protocol = SMB3
-        min protocol = SMB2
-        max protocol = SMB3
+## Release History
 
-1 - Adicionar crontab:
-# Ex: Atualização a cada 6 hora
-* */6 * * * <PATH>/ransomware-smb.py
-
-2 - Escolha da variavel "dirsamba"
-
-ex:
-dirsamba='/etc/samba'
-
-3 - Descomentar comando Reload do Samba.
-
-# Reload Samba
-#os.system("smbcontrol smbd reload-config")
-#os.system("smbcontrol nmbd reload-config")
-
-
-
-
-
+* 0.1
+    * Primeira Versão
 
