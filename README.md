@@ -1,4 +1,4 @@
-# Ransomware-Samba
+# Ransomware-Veto-Samba
 
 Função: 
 Cria um arquivo com o parametro "veto files = " todos os arquivos conhecidos de ransomware, fazendo com que esses arquivos não sejam gravados.
