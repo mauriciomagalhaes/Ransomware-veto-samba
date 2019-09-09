@@ -12,6 +12,10 @@ python >= 3.5
         git clone https://github.com/mauriciomagalhaes/Ransomware-veto-samba.git
 
         pip install python-dateutil
+        
+        cd <PATH>/Ransomware-veto-samba
+        
+        chmod +x ransomware-veto-smb.py 
 
 1 - Adicionar crontab:
 
