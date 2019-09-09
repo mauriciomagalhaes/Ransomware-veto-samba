@@ -10,17 +10,8 @@ Crie um include no [Global]
 Ex: smb.conf
 
 [global]
-        workgroup = SERVER
-        realm = SERVER.LOCAL
-        netbios name = SERVERSMB
-        server role = active directory domain controller
-        server services = -dns
-        dns forwarder = 192.168.1.1
-        idmap_ldb:use rfc2307 = yes
-        vfs objects = acl_xattr, full_audit, shadow_copy2, recycle
-        map acl inherit = Yes
-        store dos attributes = Yes
-       
+        ...
+        
         include = /etc/samba/ransomwares.conf
 
         client min protocol = SMB2
