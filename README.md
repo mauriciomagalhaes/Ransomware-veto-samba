@@ -17,7 +17,7 @@ python >= 3.5
 
 Ex: Atualização a cada 6 hora
 
-        * */6 * * * <PATH>/ransomware-smb.py
+        * */6 * * * <PATH>/ransomware-veto-smb.py
 
 2 - Escolha da variavel "dirsamba"
 
