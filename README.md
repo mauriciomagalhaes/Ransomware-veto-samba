@@ -65,7 +65,7 @@ Descomente as útimas linhas abaixo:
         #time.sleep(5)
         #os.system("systemctl stop samba")
         
-   #Bash
+   #Bash -  Escolha o tipo de reinicialização, padrão init.d
     
         Por smbcontrol
         #$SMBCONTROL all reload-config
