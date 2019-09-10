@@ -23,5 +23,8 @@ sed -i 's/^/\//g' $SMBCONF/ransomwares.conf
 sed -i ':a;N;s/\n//g;ta' $SMBCONF/ransomwares.conf
 sed -i 's/^/veto files = /g' $SMBCONF/ransomwares.conf
 
+/etc/init.d/samba stop
+sleep 5
+/etc/init.d/samba start
 #$SMBCONTROL smbd reload-config
 #$SMBCONTROL/smbcontrol nmbd reload-config
