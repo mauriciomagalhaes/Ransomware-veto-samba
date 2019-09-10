@@ -51,13 +51,34 @@ Ex: Atualização a cada 6 hora
 ## Reload Samba
 Descomente as útimas linhas abaixo:
         
-        Python
-        os.system("smbcontrol smbd reload-config")
-        os.system("smbcontrol nmbd reload-config")
+   #Python - Escolha o tipo de reinicialização, padrão init.d
+   
+        Por smbcontrol 
+        # os.system("smbcontrol all reload-config")
         
-        Bash
-        $SMBCONTROL smbd reload-config
-        $SMBCONTROL nmbd reload-config
+        Port init
+        os.system("/etc/init.d/samba stop")
+        time.sleep(5)
+        os.system("/etc/init.d/samba start")
+        
+        Por System
+        #os.system("systemctl stop samba")
+        #time.sleep(5)
+        #os.system("systemctl stop samba")
+        
+   #Bash -  Escolha o tipo de reinicialização, padrão init.d
+    
+        Por smbcontrol
+        #$SMBCONTROL all reload-config
+        
+        Por Init.d
+        /etc/init.d/samba stop
+        sleep(5)
+        /etc/init.d/samba start
+        
+        Por Sytem
+        #systemctl stop samba
+        #systemctl stop samba
 
 
 ## Samba:
@@ -66,7 +87,7 @@ Crie um include em smb.conf no [Global] ou em qualquer outro compartilhamento.
 
         include = /etc/samba/ransomwares.conf
 
-        #Desativando o protocolo SMB1 - WindosXp não irá funcionar
+        #Desativando o protocolo SMB1 - Windos XP não irá funcionar
         
         client min protocol = SMB2
         client max protocol = SMB3
