@@ -87,7 +87,7 @@ Crie um include em smb.conf no [Global] ou em qualquer outro compartilhamento.
 
         include = /etc/samba/ransomwares.conf
 
-        #Desativando o protocolo SMB1 - WindosXp não irá funcionar
+        #Desativando o protocolo SMB1 - Windos XP não irá funcionar
         
         client min protocol = SMB2
         client max protocol = SMB3
