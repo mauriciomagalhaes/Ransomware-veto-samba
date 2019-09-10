@@ -41,16 +41,24 @@ Ex: Atualização a cada 6 hora
 2 - Escolha da variavel "dirsamba"
 
 Ex: 
-
+        Python
         dirsamba='/etc/samba'
+        
+        Bash
+        SMBCONF='/etc/samba'
 
 3 - Descomentar comando Reload do Samba.
 
 ## Reload Samba
 Descomente as útimas linhas abaixo:
-
+        
+        Python
         os.system("smbcontrol smbd reload-config")
         os.system("smbcontrol nmbd reload-config")
+        
+        Bash
+        $SMBCONTROL smbd reload-config
+        $SMBCONTROL nmbd reload-config
 
 
 ## Samba:
