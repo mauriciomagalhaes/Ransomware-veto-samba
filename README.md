@@ -9,15 +9,20 @@ python >= 3.5
 
 ## Linux:
 
-        git clone https://github.com/mauriciomagalhaes/ransomware-samba.git
+        git clone https://github.com/mauriciomagalhaes/Ransomware-veto-samba.git
 
         pip install python-dateutil
+        
+        cd <PATH>/Ransomware-veto-samba
+        
+        chmod +x ransomware-veto-smb.py 
 
 1 - Adicionar crontab:
 
 Ex: Atualização a cada 6 hora
 
-        * */6 * * * <PATH>/ransomware-smb.py
+        * */6 * * * <PATH>/ransomware-veto-smb.py
+        ex: * */6 * * * /opt/scripts/Ransomware-veto-samba/ransomware-veto-smb.py
 
 2 - Escolha da variavel "dirsamba"
 
@@ -36,10 +41,12 @@ Descomente as útimas linhas abaixo:
 
 ## Samba:
 
-Crie um include no [Global]
+Crie um include em smb.conf no [Global] ou em qualquer outro compartilhamento.
 
         include = /etc/samba/ransomwares.conf
 
+        #Desativando o protocolo SMB1 - WindosXp não irá funcionar
+        
         client min protocol = SMB2
         client max protocol = SMB3
         min protocol = SMB2

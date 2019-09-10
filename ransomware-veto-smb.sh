@@ -24,5 +24,5 @@ sed -i 's/^/\//g' $SMBCONF/ransomwares.conf
 sed -i ':a;N;s/\n//g;ta' $SMBCONF/ransomwares.conf
 sed -i 's/^/veto files = /g' $SMBCONF/ransomwares.conf
 
-$SMBCONTROL smbd reload-config
+#$SMBCONTROL smbd reload-config
 #$SMBCONTROL/smbcontrol nmbd reload-config
