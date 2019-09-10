@@ -29,9 +29,17 @@ for x in rans:
 
 sys.stdout.close()
 # Reload Samba
+
+# Por smbcontrol 
 # os.system("smbcontrol smbd reload-config")
 # os.system("smbcontrol nmbd reload-config")
 #
+# Port init
 os.system("/etc/init.d/samba stop")
 time.sleep(5)
 os.system("/etc/init.d/samba start")
+# Por System
+#os.system("systemctl stop samba")
+#time.sleep(5)
+#os.system("systemctl start samba")
+
