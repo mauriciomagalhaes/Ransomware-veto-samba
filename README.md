@@ -53,14 +53,15 @@ Descomente as útimas linhas abaixo:
         
    #Python - Escolha o tipo de reinicialização, padrão init.d
    
-        # Por smbcontrol 
+        Por smbcontrol 
         # os.system("smbcontrol all reload-config")
-        #
-        # Port init
+        
+        Port init
         os.system("/etc/init.d/samba stop")
         time.sleep(5)
         os.system("/etc/init.d/samba start")
-        # Por System
+        
+        Por System
         #os.system("systemctl stop samba")
         #time.sleep(5)
         #os.system("systemctl stop samba")
