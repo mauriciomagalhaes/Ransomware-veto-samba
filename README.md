@@ -40,7 +40,6 @@ Ex: Atualização a cada 6 hora
         
 2 - Escolha da variavel "dirsamba"
 
-Ex: 
         Python
         dirsamba='/etc/samba'
         
