@@ -8,7 +8,6 @@ JQ=$(which jq)
 TOTALREG=$(jq -r .api.file_group_count $SMBCONF/ransomwares.json)
 DATA=$(jq -r .lastUpdated $SMBCONF/ransomwares.json)
 
-
 while true; do
     if curl --output /dev/null --silent --head --fail https://fsrm.experiant.ca/api/v1/combined; then
         curl -o /etc/samba/ransomwares.json https://fsrm.experiant.ca/api/v1/combined && break
