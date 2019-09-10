@@ -51,7 +51,8 @@ Ex: Atualização a cada 6 hora
 ## Reload Samba
 Descomente as útimas linhas abaixo:
         
-        Python - Escolha o tipo de reinicialização, padrão init.d
+   #Python - Escolha o tipo de reinicialização, padrão init.d
+   
         # Por smbcontrol 
         # os.system("smbcontrol all reload-config")
         #
@@ -64,7 +65,8 @@ Descomente as útimas linhas abaixo:
         #time.sleep(5)
         #os.system("systemctl stop samba")
         
-        Bash
+   #Bash
+    
         Por smbcontrol
         #$SMBCONTROL all reload-config
         
