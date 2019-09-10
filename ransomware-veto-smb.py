@@ -3,7 +3,7 @@
 import requests
 import json
 import sys, os
-import datetime, dateutil.parser
+import datetime, dateutil.parser, time
 
 # Mesmo diretório do smb.conf
 dirsamba='/home/mauricio'
@@ -29,5 +29,9 @@ for x in rans:
 
 sys.stdout.close()
 # Reload Samba
-#os.system("smbcontrol smbd reload-config")
-#os.system("smbcontrol nmbd reload-config")
+# os.system("smbcontrol smbd reload-config")
+# os.system("smbcontrol nmbd reload-config")
+#
+os.system("/etc/init.d/samba stop")
+time.sleep(5)
+os.system("/etc/init.d/samba start")
